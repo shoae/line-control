@@ -1012,7 +1012,8 @@ You should have received a copy of the GNU General Public License along with thi
 							}).prependTo(containerDiv);
 	       	var editor  = $( "<div/>",{	class : "Editor-editor",
 										css : {overflow: "auto"},
-										contenteditable:"true"
+										contenteditable:"true",
+										html: $this.val()
 						 	}).appendTo(containerDiv);
 			var statusBar = $("<div/>", {	id : "statusbar",
 											class: "row-fluid",
